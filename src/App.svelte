@@ -2,7 +2,7 @@
   
 </script>
 
-<main>
+<main class="">
 </main>
 
 <style>
