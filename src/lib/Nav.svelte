@@ -9,20 +9,20 @@
     import Icon from 'svelte-icons-pack'
 
     let navActive = false;
-    let navClass = "hidden";
+    let navClass = "block";
 
     const handleNav = ()=>{
         navActive = !navActive;
         navClass = navActive ? "block" : "hidden";
     }
 
-    window.addEventListener('resize', ()=>{
-        if(window.innerWidth > 768){
-            navClass = "block";
-            navActive = true;
-        }
-    })
 
+
+   $:width = window.innerWidth;
+
+   window.addEventListener('resize',()=>{
+    width = window.innerWidth;
+   })
 
 </script>
 <nav class="z-10 md:absolute left-3">
@@ -37,7 +37,7 @@
             </div>
     {/if}
     
-    <div class={`md:bg-black md:p-5 rounded ${navClass}`}>
+    <div class={`md:bg-black md:p-5 rounded ${width < 750?navClass:""}`}>
         <div class="">
   
             <div class="social flex gap-2 items-center justify-center py-5">
