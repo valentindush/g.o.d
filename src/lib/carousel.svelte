@@ -28,17 +28,20 @@
         })
     }
 </script>
-<div class="px-24 mt-6 py-6 relative md:px-12">   
-    <button on:click={scrollLeft} class="bg-gray-200 absolute w-12 h-12 flex items-center justify-center top-[40%] left-5 cursor-pointer active:scale-[.98] md:left-0">
-        <Icon src={FaSolidAngleLeft} color="gray" size="24" />
-    </button>
-    <button on:click={scrollRight} class="bg-gray-200 absolute w-12 h-12 flex items-center justify-center top-[40%] right-5 cursor-pointer active:scale-[.98] md:right-0">
-        <Icon src={FaSolidAngleLeft} color="gray" size="24" className='rotate-180' />
-    </button>
-    <div bind:this={div} class="flex gap-2 w-full overflow-hidden relative px-1">
-        
-        {#each images as img}
-            <img class="w-[20rem] h-[14rem] object-cover" src={`./img/${img}`} alt="mover the paper out and they read">
-        {/each}
+<div class="px-24 mt-4 py-6 relative md:px-12">
+    <h2 class="text-2xl text-gray-700 font-semibold py-4">Take a look at some of our beautiful images</h2>   
+    <div class="">
+        <button on:click={scrollLeft} class="bg-gray-200 absolute w-12 h-12 flex items-center justify-center top-[40%] left-5 cursor-pointer active:scale-[.98] md:left-0">
+            <Icon src={FaSolidAngleLeft} color="gray" size="24" />
+        </button>
+        <button on:click={scrollRight} class="bg-gray-200 absolute w-12 h-12 flex items-center justify-center top-[40%] right-5 cursor-pointer active:scale-[.98] md:right-0">
+            <Icon src={FaSolidAngleLeft} color="gray" size="24" className='rotate-180' />
+        </button>
+        <div bind:this={div} class="flex gap-2 w-full overflow-hidden relative px-1">
+            
+            {#each images as img}
+                <img class="w-[20rem] h-[14rem] object-cover" src={`./img/${img}`} alt="mover the paper out and they read">
+            {/each}
+        </div>
     </div>
 </div>

@@ -14,7 +14,7 @@
             Emphasizing the value of girls in preparing for their future mother, combating unplanned pregnancies, combating domestic violence, Conducting G.O.D Conferences to better understand girls' fight against sexual violence, Finding what makes a girl always happy.  
         </p>
     </div>
-    <div class="bg-gray-200 p-5 rounded-lg mt-[4rem] h-[14rem] shadow-md flex justify-between items-center md:flex-wrap md:h-fit md:justify-center">
+    <div class="bg-gray-100 p-5 rounded-lg mt-[4rem] h-[14rem] shadow-md flex justify-between items-center md:flex-wrap md:h-fit md:justify-center">
         <HomeAc txt="200+|children put back to school" />
         <HomeAc txt="200+|School fees payed" />
         <HomeAc txt="200+|Single mothers helped" />
