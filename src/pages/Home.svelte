@@ -16,11 +16,11 @@
     </div>
     <div class="bg-gray-100 p-5 rounded-lg mt-[4rem] h-[14rem] shadow-md flex justify-between items-center md:flex-wrap md:h-fit md:justify-center">
         <HomeAc txt="200+|children put back to school" />
-        <HomeAc txt="200+|School fees payed" />
-        <HomeAc txt="200+|Single mothers helped" />
-        <HomeAc txt="200+|Money funded" />
-        <HomeAc txt="200+|Ongoing activities" />
-        <HomeAc txt="200+|National awards achieved" />
+        <HomeAc txt="1500$+|School fees payed" />
+        <HomeAc txt="1500+|Single mothers helped" />
+        <HomeAc txt="20k$+|Money funded" />
+        <HomeAc txt="50+|Ongoing activities" />
+        <HomeAc txt="5+|National awards achieved" />
     </div>
 
 </main>
