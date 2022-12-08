@@ -14,7 +14,7 @@
         </p>
     </div>
     <div class="bg-gray-100 p-4 rounded-lg mt-4">
-        <div class="flex justify-center gap-3 flex-wrap">
+        <div class="flex justify-center gap-3 md:flex-wrap">
             <div class="border border-yellow-400 rounded-lg w-full h-[300px] flex flex-col items-center justify-center gap-8 text-center md:w-[250px]">
                 <p class="text-yellow-400">Use MTN mobile money</p>
                 <p>Use this code :
@@ -26,7 +26,7 @@
             </div>
            
         </div>
-        <div class="flex justify-center gap-3 mt-3 flex-wrap">
+        <div class="flex justify-center gap-3 mt-3 md:flex-wrap">
             <div class="border border-blue-400 rounded-lg w-full h-[300px] flex flex-col items-center justify-center gap-8 text-center md:w-[250px]">
                 <p class="text-blue-400">Use paypal</p>
                 <p>Send to user: G.O.D</p>

@@ -8,38 +8,31 @@
     import AiOutlineClose from "svelte-icons-pack/ai/AiOutlineClose";
     import Icon from 'svelte-icons-pack'
 
-    let navActive = false;
-    let navClass = "block";
-
-    const handleNav = ()=>{
-        navActive = !navActive;
-        navClass = navActive ? "block" : "hidden";
-    }
-
-
-
-   $:width = window.innerWidth;
-
+   let width = window.innerWidth;
    window.addEventListener('resize',()=>{
     width = window.innerWidth;
    })
-
+   let navActive = false;
+   let navClass =(width < 750) ? "block" : "hidden";
+   const handleNav = ()=>{
+        navActive = !navActive;
+        navClass = navActive ? "block" : "hidden";
+    }
 </script>
 <nav class="z-10 md:absolute left-3">
 
     {#if !navActive}
-        <div on:click={handleNav} class="absolute hidden md:block mt-1 ml-2 cursor-pointer active:scale-105">
-            <Icon src={HiOutlineMenuAlt2} color="white" size="30" />
+        <div on:click={handleNav} class="absolute hidden md:block mt-1 ml-1 cursor-pointer active:scale-105">
+            <Icon src={HiOutlineMenuAlt2} color="gray" size="30" />
         </div>
         {:else}
-            <div on:click={handleNav} class="absolute hidden md:block mt-1 ml-5 cursor-pointer active:scale-105">
-                <Icon src={AiOutlineClose} color="gray" size="27"/>
+            <div on:click={handleNav} class="absolute hidden md:block mt-1 ml-4 cursor-pointer active:scale-105">
+                <Icon src={AiOutlineClose} color="gray" size="24"/>
             </div>
     {/if}
     
-    <div class={`md:bg-black md:p-5 rounded ${width < 750?navClass:""}`}>
+    <div class={`md:bg-gray-900 bg-opacity-40 md:p-5 rounded ${width < 750?navClass:""}`}>
         <div class="">
-  
             <div class="social flex gap-2 items-center justify-center py-5">
                 <a href="/#">
                     <Icon src={FiAtSign} color="gray" size="24" />
@@ -66,7 +59,7 @@
                </a>  
             </div>
             <div class="nav-links">
-                <ul class="flex gap-4 text-gray-200 md:flex-col">
+                <ul class="flex gap-4 text-gray-400 md:flex-col">
                     <li><a href="/#/" class="p-2 hover:text-orange-500 duration-300 transition">Home</a></li>
                     <li><a href="/#/about" class="p-2 hover:text-orange-500 duration-300 transition">About Us</a></li>
                     <li><a href="/#/contact" class="p-2 hover:text-orange-500 duration-300 transition">Contact Us</a></li>
