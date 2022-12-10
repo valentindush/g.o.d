@@ -50,7 +50,7 @@
 
   {#each images as image}
     <SwiperSlide>
-      <img src={`./img/${image}`} alt="move the paper out and they read" class="w-full h-64 object-cover rounded-lg" />
+      <img src={`./img/${image}`} alt="move the paper out and they read" class="w-full h-64 object-cover rounded-md hover:scale-150 hover:z-10 hover:absolute transition duration-500" />
     </SwiperSlide>
     {/each}
   </Swiper>
