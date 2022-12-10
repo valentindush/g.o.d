@@ -19,7 +19,7 @@
         navClass = navActive ? "block" : "hidden";
     }
 </script>
-<nav class="z-10 md:fixed mt-3 md:w-[40%] sm:w-[70%] fixed w-full px-2 pr-8 top-0 left-3">
+<nav class="z-10 md:fixed mt-0 md:w-[40%] sm:w-[70%] fixed w-full px-2 pr-8 top-0 left-3 backdrop-blur-sm bg-white bg-opacity-10 shadow-md">
 
     {#if !navActive}
         <div on:click={handleNav} class="absolute hidden md:block mt-1 ml-1 cursor-pointer active:scale-105">
