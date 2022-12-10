@@ -10,7 +10,6 @@
   import Footer from "./lib/Footer.svelte";
   const routes = {
     '/': Home,
-    '/about': About,
     '/contact': Contact,
     '/donate': Donate
   }
@@ -22,7 +21,9 @@
 
   <div class="px-[8rem] md:px-4">
     <Nav/>
-    <Router {routes} />
+    <div class="mt-[8rem]">
+      <Router {routes} />
+    </div>
   </div>
   <Carousel/>
   <Footer />

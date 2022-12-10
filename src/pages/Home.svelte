@@ -1,7 +1,6 @@
 <script lang="ts">
   import HomeAc from "../lib/home-ac.svelte";
-
-
+  import About from "./About.svelte";
 </script>
 <main class="">
     <header class="title mt-7 text-center md:texts">
@@ -22,5 +21,7 @@
         <HomeAc txt="50+|Ongoing activities" />
         <HomeAc txt="5+|National awards achieved" />
     </div>
+
+    <About/>
 
 </main>

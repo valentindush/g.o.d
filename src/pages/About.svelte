@@ -1,14 +1,13 @@
 <script lang="ts">
 
 </script>
-<main class="">
+<main class="mt-[3rem]">
     <header class="title mt-7 text-center">
         <h2 class="text-orange-500 text-2xl font-semibold">ABOUT GIRLS FOF DESTINY</h2>
-        <p class="text-gray-300 text-sm mt-4">"Move the paper out and they read"</p>
     </header>
 
-    <div class="text-center px-[3rem] md:px-0">
-        <p class="text-gray-300 text-xl mt-12 opacity-70">
+    <div class="text-center px-[1rem] md:px-0">
+        <p class="text-gray-800 text-xl mt-12 opacity-70">
             Girls Of Destiny is a family that grew up in the mind of a boy due to the trauma of not having a sibling to the point where he was put out and people saw it. It always delights my heart when I teach girls. Girls Of Destiny We help our newborn children We always help their children to live a healthy life. 
         </p>
     </div>
@@ -21,7 +20,7 @@
             <img class="w-full h-full object-cover rounded-lg" src="img/image3.png" alt="">
         </div>
     </div>
-    <div class="h-[20rem] p-5 pr-12 bg-gray-100 shadow-sm mt-2 rounded-xl flex gap-8 flex-row-reverse md:h-fit md:flex-wrap-reverse md:p-3">
+    <div class="h-[20rem] p-5 pr-12 bg-gray-100 shadow-sm mt-12 rounded-xl flex gap-8 flex-row-reverse md:h-fit md:flex-wrap-reverse md:p-3">
         <div class="w-[60%] pt-5 md:w-full md:text-center">
             <h2 class="text-2xl font-semibold text-gray-700 pb-4 md:text-center">Our Mission</h2>
             <p>The mission we have here in the world is to leave the world and set up a Bank that will help the Girl, Adolescent Girls And Youth Development, Capacity building, Gender Equality and Female Empowerment, Global, Mobilization for Social change, Monitoring & Evaluation.</p>

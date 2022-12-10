@@ -34,7 +34,7 @@
             </form>
             <div class="w-[40%] mt-4 md:w-full md:text-center">
                 <p class="py-2 text-md text-gray-800">girlsofdestiny2015@gmail.com</p>
-                <div class="social flex gap-2">
+                <div class="social flex gap-2 md:justify-center">
                     <a href="/#">
                         <Icon src={FiAtSign} color="gray" size="24" />
                     </a>

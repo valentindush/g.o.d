@@ -8,18 +8,18 @@
     import AiOutlineClose from "svelte-icons-pack/ai/AiOutlineClose";
     import Icon from 'svelte-icons-pack'
 
-   let width = window.innerWidth;
+    $:width = window.innerWidth;
    window.addEventListener('resize',()=>{
     width = window.innerWidth;
    })
-   let navActive = false;
-   let navClass =(width < 750) ? "block" : "hidden";
+   $:navActive = false;
+   $:navClass =(width < 750) ? "block" : "hidden";
    const handleNav = ()=>{
         navActive = !navActive;
         navClass = navActive ? "block" : "hidden";
     }
 </script>
-<nav class="z-10 md:absolute left-3">
+<nav class="z-10 md:fixed mt-3 md:w-[40%] sm:w-[70%] fixed w-full px-2 pr-8 top-0 left-3">
 
     {#if !navActive}
         <div on:click={handleNav} class="absolute hidden md:block mt-1 ml-1 cursor-pointer active:scale-105">
@@ -61,7 +61,6 @@
             <div class="nav-links">
                 <ul class="flex gap-4 text-gray-400 md:flex-col">
                     <li><a href="/#/" class="p-2 hover:text-orange-500 duration-300 transition">Home</a></li>
-                    <li><a href="/#/about" class="p-2 hover:text-orange-500 duration-300 transition">About Us</a></li>
                     <li><a href="/#/contact" class="p-2 hover:text-orange-500 duration-300 transition">Contact Us</a></li>
                     <li><a href="/#/donate" class="p-2 hover:text-orange-500 duration-300 transition">Donate</a></li>
                 </ul>
